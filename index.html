@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Undella</title>
+<meta name="description" content="Undella is a Minecraft network built from scratch: custom plugins, hand-built towns, and living NPCs.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%235b8c3a'/><rect y='10' width='16' height='6' fill='%23845c3c'/></svg>">
+<style>
+  :root {
+    --bg: #f6f3ec; --fg: #1f1d1a; --muted: #6b665c; --card: #fffdf8;
+    --line: #e2dccf; --accent: #5b8c3a; --accent-fg: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141513; --fg: #ecebe6; --muted: #9a978d; --card: #1c1e1b;
+      --line: #2c2f2a; --accent: #7fb356; --accent-fg: #10140d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+  nav { display: flex; justify-content: space-between; align-items: center; padding: 24px 0; }
+  .logo { font-weight: 800; letter-spacing: .04em; font-size: 20px; color: var(--fg); text-decoration: none; }
+  .logo span { color: var(--accent); }
+  nav a.link { color: var(--muted); text-decoration: none; margin-left: 20px; }
+  nav a.link:hover { color: var(--fg); }
+  header { padding: 72px 0 56px; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase;
+    color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 4px 12px;
+  }
+  h1 { font-size: clamp(40px, 8vw, 68px); line-height: 1.05; margin: 20px 0 16px; letter-spacing: -.02em; }
+  .lede { font-size: 20px; color: var(--muted); max-width: 580px; margin: 0 0 32px; }
+  .btn {
+    display: inline-block; background: var(--accent); color: var(--accent-fg); text-decoration: none;
+    font-weight: 600; padding: 12px 22px; border-radius: 8px;
+  }
+  .btn.ghost { background: transparent; color: var(--fg); border: 1px solid var(--line); margin-left: 8px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; padding: 24px 0 72px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 22px; }
+  .card h3 { margin: 0 0 6px; font-size: 18px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+  footer { border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--muted); font-size: 14px; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="logo" href="/">UNDELLA<span>.</span></a>
+    <div>
+      <a class="link" href="https://blog.undella.net">Blog</a>
+      <a class="link" href="https://github.com/Undella">GitHub</a>
+    </div>
+  </nav>
+
+  <header>
+    <span class="badge">Opening soon</span>
+    <h1>A Minecraft network,<br>built from scratch.</h1>
+    <p class="lede">Hand-built towns, living NPCs, and custom plugins written from the ground up.
+      Follow along while it comes together.</p>
+    <a class="btn" href="https://blog.undella.net">Read the dev blog</a>
+    <a class="btn ghost" href="https://github.com/Undella">GitHub</a>
+  </header>
+
+  <section class="grid">
+    <div class="card"><h3>Living towns</h3><p>Villages built by hand and brought to life, with buildings you can walk into.</p></div>
+    <div class="card"><h3>Real NPCs</h3><p>Townsfolk who keep their own schedules, walking to work and back home.</p></div>
+    <div class="card"><h3>Custom everything</h3><p>Ranks, moderation, economy and more, all written in-house.</p></div>
+  </section>
+
+  <footer>© 2026 Undella · Not affiliated with Mojang or Microsoft.</footer>
+</div>
+</body>
+</html>
